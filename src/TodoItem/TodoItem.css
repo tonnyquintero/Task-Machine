@@ -41,7 +41,7 @@
   
   .Icon-delete {
     position: absolute;
-    top: -24px;
+    font-size: 30px;
     right: 0;
   }
   .Icon-delete:hover {

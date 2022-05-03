@@ -2,5 +2,15 @@
     font-size: 24px;
     text-align: center;
     margin: 0;
-    padding: 48px;
+    padding: 18px;
+    color: dimgrey;
+  }
+
+  h1 {
+    padding: 10px;
+  color: black;
+  font: 40px;
+  text-shadow: 0px 0px 10px #61DAFA, 2px 2px 4px #61DAFA;
+  text-align: center;
+
   }

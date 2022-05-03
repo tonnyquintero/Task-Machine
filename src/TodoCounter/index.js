@@ -7,10 +7,14 @@ function TodoCounter() {
     const { totalTodos, completedTodos } = React.useContext(TodoContext);
 
     return (
-        <h2 className='TodoCounter'>
-            Has Completado {completedTodos} de {totalTodos} TODOS
-        </h2>
+        <>
+            <h1>Bienvenidos a Task Machine</h1>
+            <h2 className='TodoCounter'>
+                Has Completado {completedTodos} de {totalTodos} Tareas
+            </h2>
+        </>
     )
+
 }
 
 export { TodoCounter };

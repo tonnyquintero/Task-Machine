@@ -6,6 +6,10 @@ body {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
+.icono-flama {
+  color:darkorange;
+}
+
 #root {
   margin: 0 24px;
   position: relative;

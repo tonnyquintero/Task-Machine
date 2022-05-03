@@ -5,6 +5,11 @@ import { TodoSearch } from '../TodoSearch';
 import { TodoItem } from '../TodoItem';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoList } from '../TodoList';
+import { Modal } from '../Modal';
+import { TodoForm } from '../TodoForm';
+import { Footer } from '../Footer';
+import { TodosLoading } from '../TodosLoading';
+import { AiFillFire } from "react-icons/ai";
 
 function AppUI() {
   const {
@@ -13,6 +18,8 @@ function AppUI() {
       searchedTodos, 
       completeTodo, 
       deleteTodo,
+      openModal,
+      setOpenModal,
     } = React.useContext(TodoContext);
 
     return (    
@@ -22,8 +29,14 @@ function AppUI() {
 
         <TodoList>
             {error && <p>Desespérate, Hubo un Error</p>}
-            {loading && <p>Estamos Cargando, No  Desesperes...</p>}
-            {(!loading && !searchedTodos.length) && <p>Crea Tu Primer Todo!</p>}
+            {loading && <TodosLoading />}
+            {(!loading && !searchedTodos.length) && <> <p>Crea Tu Primera Tarea!</p>
+            <AiFillFire className='icono-flama' />
+            <AiFillFire className='icono-flama' />
+            <AiFillFire className='icono-flama' />
+            <AiFillFire className='icono-flama' />
+            <AiFillFire className='icono-flama' />
+            <AiFillFire className='icono-flama' /> </>}
       
             {searchedTodos.map(todo => (
               <TodoItem 
@@ -36,7 +49,16 @@ function AppUI() {
               ))}
         </TodoList>
 
-        <CreateTodoButton />
+       {!!openModal && (
+          <Modal>
+            <TodoForm />
+          </Modal>
+       )}
+
+        <CreateTodoButton 
+          setOpenModal={setOpenModal} openModal={openModal}
+        />
+        <Footer />
       </React.Fragment>
     );
 }
