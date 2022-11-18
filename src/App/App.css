@@ -14,10 +14,25 @@
 }
 
 .interruptor {
-  width: 150px;
+
   cursor: pointer;
+  display: flex;
+  height: 91px;
 }
 
+.darkH2 {
+  color: yellow;
+  margin: 0;
+  padding-top: 2em;
+  font-size: large;
+}
+
+.lightH2 {
+  color: black;
+  margin: 0;
+  padding-top: 2em;
+  font-size: large;
+}
 
 .Container {
   width: 100%;
