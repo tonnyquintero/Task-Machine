@@ -5,6 +5,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 24px;
+    margin-left: 1em;
+    margin-right: 1em;
     box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
   }
   

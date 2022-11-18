@@ -13,6 +13,27 @@
   }
 }
 
+.interruptor {
+  width: 150px;
+  cursor: pointer;
+}
+
+
+.Container {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  padding: 0;
+}
+
+.Container-dark {
+  background-color: black;
+}
+
+.Container-light {
+  background-color: white;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

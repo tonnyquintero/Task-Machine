@@ -1,4 +1,5 @@
 import React from 'react';
+import { DarkModeProvider } from '../Context/ThemeContext.jsx'
 import { TodoProvider } from '../TodoContext';
 import { AppUI } from './AppUI';
 
@@ -16,7 +17,9 @@ function App() {
 
   return (
     <TodoProvider>
-        <AppUI />
+        <DarkModeProvider>
+          <AppUI />
+        </DarkModeProvider>
     </TodoProvider>
   );
 }

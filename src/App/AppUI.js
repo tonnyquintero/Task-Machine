@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Interruptor from '../App/Interruptor.jsx'
+import { ThemeContext } from '../Context/ThemeContext.jsx'
 import { TodoContext } from '../TodoContext';
 import { TodoCounter } from '../TodoCounter';
 import { TodoSearch } from '../TodoSearch';
@@ -10,8 +12,13 @@ import { TodoForm } from '../TodoForm';
 import { Footer } from '../Footer';
 import { TodosLoading } from '../TodosLoading';
 import { AiFillFire } from "react-icons/ai";
+import './App.css'
+
 
 function AppUI() {
+
+  const {darkMode} = useContext(ThemeContext)
+
   const {
       error, 
       loading, 
@@ -24,6 +31,8 @@ function AppUI() {
 
     return (    
       <React.Fragment>
+        <div className={darkMode ? `Container Container-dark` : `Container Container-light`}>
+        <Interruptor />
         <TodoCounter />  
         <TodoSearch />
 
@@ -59,6 +68,7 @@ function AppUI() {
           setOpenModal={setOpenModal} openModal={openModal}
         />
         <Footer />
+        </div>
       </React.Fragment>
     );
 }
