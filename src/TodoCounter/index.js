@@ -9,7 +9,7 @@ function TodoCounter() {
 
     return (
         <>
-            <h1>Bienvenidos a Task Machine</h1>
+            <h1>Bienvenidos a Task Machine 📓</h1>
             <h2 className='TodoCounter'>
                 Has Completado {completedTodos} de {totalTodos} Tareas
             </h2>
