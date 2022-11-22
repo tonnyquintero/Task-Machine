@@ -3,6 +3,14 @@
     text-align: center;
     margin: 0;
     padding: 18px;
+    color: white;
+  }
+
+  .TodoCounterDark {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 18px;
     color: dimgrey;
   }
 
@@ -14,4 +22,12 @@
   text-align: center;
   margin: 0;
 
+  }
+
+  .black {
+    color: yellow;
+  }
+
+  .white {
+    color: black;
   }
