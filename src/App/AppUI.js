@@ -37,7 +37,7 @@ function AppUI() {
         <TodoSearch />
 
         <TodoList>
-            {error && <p>Desespérate, Hubo un Error</p>}
+            {error && <p>Desespérate!!! Hubo un Error</p>}
             {loading && <TodosLoading />}
             {(!loading && !searchedTodos.length) && <> <p>Crea Tu Primera Tarea!</p>
             <AiFillFire className='icono-flama' />
